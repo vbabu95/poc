@@ -1,0 +1,28 @@
+{
+    "id": "http://types/Address",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "required": ["street","zipcode","city","region","country"],
+    "properties": {
+        "street": {
+            "description": "The street address",
+            "type": "string"
+        },
+        "zipcode": {
+            "description": "The zip code",
+            "type": "string"
+        },
+        "city": {
+            "description": "The city",
+            "type": "string"
+        },
+        "region": {
+            "description": "The state, providence or other regional boundary name",
+            "type": "string"
+        },
+        "country": {
+            "description": "The country",
+            "type": "string"
+        }
+    }
+}

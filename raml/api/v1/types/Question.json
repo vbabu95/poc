@@ -1,0 +1,30 @@
+{
+    "id": "http://types/Question",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "required": ["questionId","text","responses"],
+    "properties": {
+        "questionId": {
+            "description": "The identifier of the object",
+            "type": "string"
+        },
+        "text": {
+            "description": "The text of the question",
+            "type": "string"
+        },
+        "responses": {
+            "description": "The available responses for the question.  Should always be a collection with two items.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "dependentIds": {
+            "description": "Optional array of question ids that this question depends on",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

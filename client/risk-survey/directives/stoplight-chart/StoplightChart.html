@@ -1,0 +1,10 @@
+<table>
+    <tbody>
+        <tr *ngFor="let section of survey?.sections" class="section-status {{section.scoreDescription}}">
+            <td class="cell-padding">{{section.title}}</td>
+            <td class="cell-padding cell-status score {{section.scoreDescription}}">{{section.scoreDescription}}</td>
+            <td class="cell-padding score {{section.scoreDescription}}">{{section.score | percent}}</td>
+            <td class="cell-icon score {{section.scoreDescription}}"><i class="icons {{section.scoreHarvey}}"></i></td>
+        </tr>
+    </tbody>
+</table>

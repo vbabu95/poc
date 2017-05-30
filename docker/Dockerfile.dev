@@ -1,0 +1,16 @@
+FROM markadams/chromium-xvfb
+
+RUN apt-get update && apt-get install -y curl default-jre
+
+RUN mkdir -p /usr/app
+WORKDIR /usr/app
+COPY .nvmrc .nvmrc
+
+ENV NVM_DIR /root/.nvm
+RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+RUN [ -s "$NVM_DIR/nvm.sh" ] && . $NVM_DIR/nvm.sh || echo "Installing NodeJS" && \
+    nvm install && \
+    nvm alias default && \
+    nvm use default
+
+EXPOSE 8080

@@ -1,0 +1,47 @@
+#%RAML 0.8
+title: API Services
+version: 1
+mediaType: application/json
+baseUri: /api/v1
+protocols:
+  - HTTPS
+
+documentation:
+    - title: TODO
+      content: Put your stuff here!
+
+schemas:
+    -
+        Question: !include "api/v1/types/Question.json"
+        QuestionCollection: !include "api/v1/types/QuestionCollection.json"
+        Score: !include "api/v1/types/Score.json"
+        ScoreCollection: !include "api/v1/types/ScoreCollection.json"
+        Subsection: !include "api/v1/types/Subsection.json"
+        SubsectionCollection: !include "api/v1/types/SubsectionCollection.json"
+        Section: !include "api/v1/types/Section.json"
+        SectionCollection: !include "api/v1/types/SectionCollection.json"
+        Survey: !include "api/v1/surveys/member.schema.json"
+        SurveyCollection: !include "api/v1/surveys/collection.schema.json"
+        Address: !include "api/v1/types/Address.json"
+        Error: !include "api/v1/types/Error.json"
+        User: !include "api/v1/types/User.json"
+        UserCollection: !include "api/v1/types/UserCollection.json"
+        Login: !include "api/v1/types/Login.json"
+
+securitySchemes:
+  - JWT:
+      type: x-JWT
+      describedBy:
+        headers:
+          Authorization:
+            description: |
+             JWT token containing claims for 'exp' (expiration), 'roles', and 'permissions'.  TODO: define the format for each of those
+            required: true
+
+traits: !include api/traits.raml
+resourceTypes: !include api/types.raml
+
+/errors: !include "api/v1/errors/resource.raml"
+/users: !include "api/v1/users/resource.raml"
+/login: !include "api/v1/login/resource.raml"
+/surveys: !include "api/v1/surveys/resource.raml"

@@ -1,0 +1,10 @@
+{
+    "errorCode": "Error",
+    "message": "An error occurred",
+    "url": "http://www.app.com/#page",
+    "version": "foobar",
+    "logHistory": [
+        "stack trace line 1",
+        "stack trace line 2"
+    ]
+}

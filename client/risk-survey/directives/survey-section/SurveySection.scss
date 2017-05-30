@@ -1,0 +1,130 @@
+@import "../../../shared/scss/_variables";
+
+:host-context {
+
+    /* styles should be scoped under host-context */
+    .left-nav {    
+        background: $color-black-accent;
+
+        .nav-link {
+            width: 100%;
+            padding: 16px 25px;
+            border: 0;
+            background-color: $color-black-accent;
+            color: $color-white;
+            font-size: 16px;
+            text-align: left;
+
+            &.current {
+                //background: $color-black-near;
+                color: $color-blue-primary;
+                //font-weight: bold;
+            }
+
+            &.active {
+
+                .check-icon {
+                    background-image: url('images/check-empty-active.svg');
+                }
+            }
+
+            &.complete {
+
+                .check-icon {
+                    background-image: url('images/check-complete.svg');
+                }
+            }
+
+            &.disabled {
+                color: $color-grey-dark;
+                cursor: not-allowed;
+                pointer-events: none;
+
+                .check-icon {
+                    background-image: url('images/check-empty-off.svg');
+                }
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            .check-icon {
+                display: block;
+                flex: none;
+                width: 22px;
+                height: 22px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .right-content {
+        padding: 20px;
+        overflow-y: auto;
+        background: $color-white-near;
+        //background-image: url('images/questionnaire-bgrd.svg');
+    }
+
+    .question-group {
+        margin-bottom: 15px;
+    }
+
+    .question {
+        overflow: hidden;
+        border-top: 1px solid $color-grey-dark;
+
+        &:first-child {
+            border-top: 0;
+        }
+
+        &.indent {
+            padding-left: 20px;
+        }
+    }
+
+    .question-text {
+        flex: 1;
+        margin: 10px 20px;
+    }
+
+    .question-responses {
+        flex: none;
+        margin: 10px;
+
+        .btn:first-child {
+            margin-right: 10px;
+        }
+    }
+
+    .question-button {
+        border-radius: 8px;
+        font-size: 14px;
+
+        &.unselected {
+            background-color: $color-white;
+            border-color: $color-grey-dark;
+            color: $color-grey-dark;
+        }
+
+        &.selected {
+            background-color: $color-blue-primary;
+            border-color: $color-blue-primary-alt;
+            color: $color-white;
+        }        
+    }
+
+    .next-button {
+        background: $color-green-dark;
+        color: $color-white;
+
+        &.disabled {
+            background: $color-white;
+            border: 1px solid $color-grey-mid-alt;
+            color: $color-grey-mid-alt;
+
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "errors": [],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "userName": "jdoe",
+      "profileImageUrl": "",
+      "address": {
+        "street": "123 Sesame Street",
+        "zipcode": "90210",
+        "city": "Beverly Hills",
+        "region": "CA",
+        "country": "US"
+      },
+      "phone": "8005551212",
+      "roles": []
+    }
+  ]
+}

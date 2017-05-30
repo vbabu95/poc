@@ -1,0 +1,40 @@
+#example using custom definitions not linked to common types
+displayName: Login
+description: |
+  Management of user authorizations
+post:
+  description: |
+    Authenticate the user via email & password
+  body:
+    schema: Login
+    example: |
+      {
+        "email": "jdoe@somewhere.com",
+        "password": "pword"
+      }
+  responses:
+    201:
+      body:
+        schema: Login
+        example: !include "member.example.json"
+    401:
+      description: |
+        Invalid email or password
+      body: 
+        text/plain: !!null
+
+delete:
+  is: [secured, ack]
+  description: |
+    Clears current session and logs user out of the application.
+
+put:
+  is: [secured]
+  description: |
+    Returns an updated token with an extended expiration.
+    This will be invoked by the client when the user has been actively using the client but not in ways that have resulted in a other service calls.  It allows the client to prevent the user from being timed out unnecessarily.
+  responses:
+    201:
+      body:
+        schema: Login
+        example: !include "member.example.json"

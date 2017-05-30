@@ -1,0 +1,60 @@
+<div class="container full-height">
+    <div class="row full-height">
+        <nav class="col-md-4 col-lg-3 left-nav d-flex flex-column">
+            <div class="row">
+                <a 
+                    *ngFor="let section of currentSurvey?.sections" 
+                    class="nav-link" 
+                    [ngClass]="{ 'disabled': !section.sectionActive, 'active': section.sectionActive, 'complete': section.sectionComplete }"
+                    [routerLink]="['/survey/section', section.sectionId]" 
+                    routerLinkActive="current">
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <span>{{section.title}}</span>
+                        <i class="check-icon"></i>
+                    </div> 
+                </a>
+            </div>
+        </nav>
+        <div class="col-md-8 col-lg-9 right-content" #questionScroller>
+            <div *ngFor="let subsection of currentSection?.subsections" class="pod question-group">
+                <div 
+                    *ngFor="let question of subsection.questions" 
+                    class="question" 
+                    [class.indent]="question.dependentIds"
+                    [@questionVisible]="question.visibityState">
+                     <div class="d-flex flex-row align-items-center full-height">
+                        <div class="question-text">{{question.questionId}}. {{question.text}}</div>
+                        <div class="d-flex flex-row question-responses">
+                            <button 
+                                *ngFor="let response of question.responses" 
+                                type="button" 
+                                class="btn question-button"
+                                [ngClass]="{'selected': question.selectedResponse === response, 'unselected': question.selectedResponse !== response}"
+                                (click)="setQuestionsResponse(question, subsection, response)">
+                                {{response}}
+                            </button>
+                        </div> 
+                     </div>                                        
+                </div>          
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+                <button 
+                    *ngIf="nextSection"
+                    type="button" 
+                    class="btn next-button"
+                    [class.disabled]="!currentSection.sectionComplete"
+                    [routerLink]="['/survey/section', nextSection.sectionId]">
+                    Continue to {{nextSection.title}}
+                </button>  
+                <button 
+                    *ngIf="!nextSection"
+                    type="button" 
+                    class="btn next-button"
+                    [class.disabled]="!currentSurvey?.surveyComplete"
+                    [routerLink]="['/survey/results']">
+                    Continue to Results
+                </button>
+            </div>                 
+        </div>
+    </div>
+</div>

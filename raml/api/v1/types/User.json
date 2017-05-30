@@ -1,0 +1,43 @@
+{
+    "id": "http://types/User",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "required": ["email","firstName","lastName","profileImageUrl","roles"],
+    "properties": {
+        "id": {
+            "description": "The identifier of the object",
+            "type": "number"
+        },
+        "email": {
+            "description": "The user email address",
+            "type": "string"
+        },
+        "firstName": {
+            "description": "The users first name",
+            "type": "string"
+        },
+        "lastName": {
+            "description": "The users last name",
+            "type": "string"
+        },
+        "profileImageUrl": {
+            "description": "The users profile image URL",
+            "type": "string"
+        },
+        "roles": {
+            "description": "The users system roles associated with the user",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "address": {
+            "description": "The address of this user",
+            "$ref": "Address"
+        },
+        "phone": {
+            "description": "The phone number of this user",
+            "type": "string"
+        }
+    }
+}

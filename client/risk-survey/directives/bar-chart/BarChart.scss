@@ -1,0 +1,41 @@
+@import "../../../shared/scss/_variables";
+
+:host-context {
+    width: 100%;
+    height: 100%;
+
+    /* styles should be scoped under host-context */
+    .survey-bar-chart {
+        width: 100%;
+        height: 100%;
+
+        /deep/ .domain {
+            
+            stroke: $color-grey-dark;
+        }
+
+        /deep/ text {
+            
+            color: $color-black-mid;
+        }
+
+        // /deep/ .axis--x {
+            
+        //     text {
+        //         transform: translate(-36px, 32px) rotate(-40deg);
+        //     }
+        // }
+
+        /deep/ .bar {
+            fill: $color-green-dark;
+
+            &.integrated {
+                fill: $color-orange;
+            }
+
+            &.immature {
+                fill: $color-red;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "id": "http://types/Survey",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "required": ["surveyId"],
+    "additionalProperties": false,
+    "properties": {
+        "surveyId": {
+            "description": "The identifier of the object",
+            "type": "string"
+        },
+        "sections": {
+            "description": "Question sections that comprise the survey",
+            "$ref": "SectionCollection"
+        }
+    }
+}

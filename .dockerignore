@@ -1,0 +1,10 @@
+.sass-cache
+.idea
+npm-debug.log
+**/*.DS_Store
+reports
+docs
+.awcache
+*.json.gzip
+*.tgz
+.org.chromium.Chromium.*

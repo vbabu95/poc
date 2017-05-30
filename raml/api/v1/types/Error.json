@@ -1,0 +1,34 @@
+{
+    "id": "http://types/Error",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "required": ["errorCode", "message", "url", "logHistory", "version"],
+    "properties": {
+        "id": {
+            "description": "The identifier of the object",
+            "type": "number"
+        },
+        "errorCode": {
+            "type": "string"
+        },
+        "message": {
+            "type": "string",
+            "description": "diagnostic error message"
+        },
+        "url": {
+            "type": "string",
+            "description": "full URL the user was viewing when the error occurred"
+        },
+        "version": {
+            "type": "string",
+            "description": "the version of the ui when the error was logged"
+        },
+        "logHistory": {
+            "description": "most recent client-side logging messages",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

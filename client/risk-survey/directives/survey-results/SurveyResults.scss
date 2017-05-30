@@ -1,0 +1,152 @@
+@import "../../../shared/scss/_variables";
+
+:host-context {
+
+    /* styles should be scoped under host-context */
+    .container {
+        overflow-y: auto;
+        background-color: $color-white-near;
+        //background-image: url('images/results-body-bgrd.svg');
+    }
+
+    .top-section {
+        margin-bottom: 50px;
+    }
+
+    .chart-section {
+        width: 100%;
+    }
+
+    .chart {
+        height: 576px;
+    }
+
+    .chart-button {
+        height: 39px;
+        color: $color-grey-mid;
+
+        &.selected {
+            color: $color-blue-primary;
+        }
+    }
+
+    .icons::before {
+        position: relative;
+        top: 2px;
+    }
+
+    .priority-title {
+        padding-top: 80px;
+        color: $color-blue-primary;
+        //font-size: 32px;
+        font-size: 50px;
+        font-family: $font-kpmg;
+    }
+
+    .priority-list {
+        padding-left: 17px;
+    }
+
+    .priority-subsection {
+        color: $color-grey-dark;
+    }
+
+    .section {
+        padding: 20px 16px;
+        margin: 0 0 10px 0;
+        overflow: hidden;
+
+        .arrow {
+            position: relative;
+            top: -4px;
+            color: $color-black-mid;
+
+            svg {
+                transform: rotate(-90deg);
+                transform-origin: 50% 50%;
+                transition: transform 300ms;
+            }
+
+            &.open {
+
+                svg {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+
+    .section-title {
+        font-size: 22px;
+        color: $color-black-mid;
+
+        &:after {
+            content: ':';
+        }
+    }
+
+    .section-score {
+        font-size: 22px;
+        color: $color-green-dark;
+
+        &.integrated {
+            color: $color-orange;
+        }
+
+        &.immature {
+            color: $color-red;
+        }
+    }
+
+    .subsection {
+
+        .subsection-title {
+            font-size: 22px;
+            color: $color-grey-darker;
+        }
+    }
+
+    .level-row {
+        flex-wrap: wrap;
+        margin: 15px 0 25px 0;
+    }
+
+    .levels {
+        flex: 1 0 120px;
+        min-width: 120px;
+        max-width: 33%;
+        margin: 0 4px 4px 0;
+        padding: 12px;
+        background-color: $color-red-dark;
+        color: $color-white;
+        font-size: 12px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.met {
+            background-color: $color-green;
+            color: $color-black;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .chart-section {
+            padding: 0 25px;
+        }
+
+        .levels {
+            max-width: 20%;
+        }
+    }
+
+    // FIXME:  remove this ie11 specific CSS if possible
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+        .icons::before {
+            top: -12px;
+        }
+    }
+}

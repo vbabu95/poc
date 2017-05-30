@@ -1,0 +1,46 @@
+@import "../../../shared/scss/_variables";
+
+:host-context {
+    width: 100%;
+    height: 100%;
+
+    /* styles should be scoped under host-context */
+    table {
+        width: 100%;
+        margin-top: 120px;
+    }
+
+    tr {
+        min-height: 50px;
+        border-bottom: 1px solid $color-grey-dark;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    .cell-padding {
+        padding: 15px 15px 15px 0;
+    }
+
+    .cell-status {
+        text-transform: capitalize;
+
+        &.score {
+            color: $color-black;
+
+            &.integrated {
+                color: $color-orange;
+            }
+
+            &.immature {
+                color: $color-red;
+            }
+        }
+    }
+
+    .cell-icon {
+        position: relative;
+        top: 3px;
+    }
+}

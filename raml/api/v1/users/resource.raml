@@ -1,0 +1,41 @@
+#https://github.com/raml-org/raml-spec/blob/master/raml-0.8.md
+#see traits.raml for more traits: secured, paged...
+is: [secured, mock]
+displayName: Users
+type:
+  #see types.raml for more options: collection, collection-readonly, collection-writeonly...
+  collection:
+    collection-example: !include "collection.example.json"
+    collection-schema: UserCollection
+    #member properties are not used for some collection types
+    member-example: !include "member.example.json"
+    member-schema: User
+get:
+  is: [paged]
+  queryParameters: &userQueryParameters
+    name:
+      type: string
+      required: false
+      example: ?name=john
+      description: Returns any users partially matching given name
+
+/count:
+  is: [secured,count]
+  get:
+    queryParameters: *userQueryParameters
+
+/{id}:
+  #see traits.raml for more traits: secured, paged...
+  get:
+    is: [secured]
+  displayName: User
+  uriParameters:
+    id: 
+      type: number
+  type:
+    #see types.raml for more options: member, member-readonly, member-writeonly...
+    member:
+      member-example: !include "member.example.json"
+      member-schema: User
+          
+        

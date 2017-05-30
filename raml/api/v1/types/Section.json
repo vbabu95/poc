@@ -1,0 +1,20 @@
+{
+    "id": "http://types/Section",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "required": ["sectionId","title","subsections"],
+    "properties": {
+        "sectionId": {
+            "description": "The identifier of the object",
+            "type": "string"
+        },
+        "title": {
+            "description": "The title of the subsection",
+            "type": "string"
+        },
+        "subsections": {
+            "description": "The subsections within the section",
+            "$ref": "SubsectionCollection"
+        }
+    }
+}

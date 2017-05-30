@@ -1,0 +1,33 @@
+{
+  "engine": {
+    "node": "6.3.1"
+  },
+  "name": "raml-starter",
+  "version": "1.0.0",
+  "description": "A starter project for working with RAML",
+  "main": "api.js",
+  "scripts": {
+    "prebuild": "npm test",
+    "build": "node_modules/.bin/raml2html api.v1.raml > index.html && node_modules/.bin/raml2md -i api.v1.raml -o API.md",
+    "test": "node test",
+    "prestart": "npm run build",
+    "start": "node server"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "ajv": "^4.8.2",
+    "body-parser": "1.15.2",
+    "compression": "1.6.2",
+    "express": "4.14.0",
+    "express-http-proxy": "0.10.0",
+    "express-session": "1.14.1",
+    "json-server": "^0.9.5",
+    "osprey": "0.3.2",
+    "osprey-mock-service": "0.1.0",
+    "raml-parser": "0.8.18",
+    "raml2html": "^3.0.1",
+    "raml2md": "^3.0.1",
+    "serve-static": "1.11.1"
+  }
+}

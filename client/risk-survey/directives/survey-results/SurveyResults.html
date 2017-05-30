@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="row top-section">
+        <div class="col-lg-7">
+            <div class="d-flex flex-column justify-content-between chart-section">
+                <radar-chart *ngIf="currentChartIndex === 0" [survey]="currentSurvey" class="chart"></radar-chart>
+                <bar-chart *ngIf="currentChartIndex === 1" [survey]="currentSurvey" class="chart"></bar-chart>
+                <stoplight-chart *ngIf="currentChartIndex === 2" [survey]="currentSurvey" class="chart"></stoplight-chart>
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="btn-group" role="group" aria-label="Chart Selection">
+                        <button type="button" class="btn btn-secondary chart-button" [class.selected]="currentChartIndex === 0" (click)="setChartIndex(0)">
+                            <i class="icons icons-radar"></i>
+                            <!--Radar-->
+                        </button>
+                        <button type="button" class="btn btn-secondary chart-button" [class.selected]="currentChartIndex === 1" (click)="setChartIndex(1)">
+                            <i class="icons icons-bar"></i>
+                            <!--Bar-->
+                        </button>
+                        <button type="button" class="btn btn-secondary chart-button" [class.selected]="currentChartIndex === 2" (click)="setChartIndex(2)">
+                            <i class="icons icons-harvey-three-quarter"></i>
+                            <!--Spotlight-->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="priority-title">Priority Attention Areas</div>
+            <ng-container *ngFor="let section of prioritySections">
+                <div *ngIf="section.score < 0.8">
+                    <span class="section-title">{{section.title}}</span>
+                    <span class="section-score" [ngClass]="{'integrated': section.score < 0.8, 'immature': section.score < 0.6}">{{section.score | percent}}</span>     
+                </div> 
+                <ul class="priority-list">
+                    <ng-container *ngFor="let subsection of section.subsections">
+                        <li class="priority-subsection" *ngIf="subsection.score < 0.8">{{subsection.title}}</li>       
+                    </ng-container>
+                </ul>                
+            </ng-container>  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div *ngFor="let section of currentSurvey?.sections" class="pod section">
+                <div (click)=toggleSectionVisibility(section)>
+                    <!-- wrapping span prevents an ie11 error when attaching the class directive to an svg element -->
+                    <span class="arrow" [class.open]="section.visibilityState === 'show'">
+                        <svg width="15" height="8">
+                            <polygon points="0,0 15,0 8,8" />
+                        </svg>
+                    </span>                    
+                    <span class="section-title">{{section.title}}</span>
+                    <span class="score section-score {{section.scoreDescription}}">{{section.score | percent}}</span>
+                </div>
+                <div [@sectionVisible]="section.visibilityState">
+                    <div *ngFor="let subsection of section.subsections" class="subsection">
+                        <div class="subsection-title">{{subsection.title}}</div>
+                        <div class="d-flex flex-row level-row">                        
+                            <div *ngFor="let scoreLevel of subsection.scoreLevels" class="levels" [class.met]="scoreLevel.met">
+                                {{scoreLevel.description}}       
+                            </div>   
+                        </div>        
+                    </div>
+                </div>         
+            </div>              
+        </div>
+    </div>
+</div>

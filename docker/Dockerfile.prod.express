@@ -1,0 +1,16 @@
+FROM buildpack-deps:jessie
+
+RUN mkdir -p /usr/app
+WORKDIR /usr/app
+COPY . /usr/app
+
+ENV NVM_DIR /root/.nvm
+RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+RUN [ -s "$NVM_DIR/nvm.sh" ] && . $NVM_DIR/nvm.sh || echo "Installing NodeJS" && \
+    nvm install && \
+    nvm alias default && \
+    nvm use default
+
+EXPOSE 8080
+
+CMD [ -s "$NVM_DIR/nvm.sh" ] && . $NVM_DIR/nvm.sh && node server

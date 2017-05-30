@@ -1,0 +1,1571 @@
+{
+    "surveyId": "1",
+    "sections": [
+        {
+            "sectionId": "1",
+            "title": "Risk Appetite and Tolerance",
+            "subsections": [
+                {
+                    "subsectionId": "1",
+                    "title": "Are risks considered as a component of organization strategy?",
+                    "questions": [
+                        {
+                            "questionId": "1",
+                            "text": "Does the organization formally consider risk in strategic planning?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "2",
+                            "text": "Does the organization consider risk when setting new business strategies?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["1"]
+                        },
+                        {
+                            "questionId": "3",
+                            "text": "Are risks formally documented?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["2"]
+                        },
+                        {
+                            "questionId": "4",
+                            "text": "Are risk management activities integrated within organization business strategy development and governance?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["3"]
+                        },
+                        {
+                            "questionId": "5",
+                            "text": "Does the organization utilize the ERM Program to integrate risk within strategic planning development and business forecasting?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["4"]
+                        },
+                        {
+                            "questionId": "6",
+                            "text": "Is risk scenario analysis used for business planning and quantitative analysis used to understand capital allocation and funding levels?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["4"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Organization does not formally consider risk in strategic planning.",
+                            "requiredQuestionIds": ["1"]
+                        },
+                        {
+                            "description": "Organization considers risk when setting new business strategies. Risk that impacts the execution of strategy may be considered but are not formally documented.",
+                            "requiredQuestionIds": ["1", "2"]
+                        },
+                        {
+                            "description": "Consideration of risk is a key aspect of organization's strategic planning. Risks are formally documented.",
+                            "requiredQuestionIds": ["1", "2", "3"]
+                        },
+                        {
+                            "description": "Risk management activities are integrated within organization business strategy development and governance.",
+                            "requiredQuestionIds": ["1", "2", "3", "4"]
+                        },
+                        {
+                            "description": "Organization utilizes the ERM Program to integrate risk within strategic planning development and business forecasting. Risk scenario analysis is used for business planning and quantitative analysis is used to understand capital allocation and funding levels.",
+                            "requiredQuestionIds": ["1", "2", "3", "4", "5", "6"]
+                        }                        
+                    ]
+                },
+                {
+                    "subsectionId": "2",
+                    "title": "Is the risk appetite of organization clearly defined and understood?",
+                    "questions": [
+                        {
+                            "questionId": "7",
+                            "text": "Does the organization have a meaningful definition or understanding of the overall corporate risk appetite?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "8",
+                            "text": "Have formal risk limits or breach protocols been established?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "9",
+                            "text": "Has the risk appetite been defined in qualitative terms for select risks or at an enterprise level?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["7", "8"]
+                        },
+                        {
+                            "questionId": "10",
+                            "text": "Is the risk appetite and risk management objectives defined in clear support of a broader set of organization objectives and strategies?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["9"]
+                        },
+                        {
+                            "questionId": "11",
+                            "text": "Does the organization have a clear view and definition of risk appetite, which reflects the objectives and strategies set for the business by senior management?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["10"]
+                        },
+                        {
+                            "questionId": "12",
+                            "text": "Does the organization have formal risk limits, tolerances, and robust breach protocols established for key risks?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["10"]
+                        },
+                        {
+                            "questionId": "13",
+                            "text": "Does the organization have formal requirements for reporting breaches and a formal remediation plan for addressing them in place?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["10"]
+                        },
+                        {
+                            "questionId": "14",
+                            "text": "Is the risk appetite formally documented and reflective of organization's strategy, including organizational objectives, business plans, and stakeholder expectations?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["11", "12", "13"]
+                        },
+                        {
+                            "questionId": "15",
+                            "text": "Does the risk appetite include advanced measurement techniques and tolerances established in terms of stress floors related to capital impacts?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["11", "12", "13"]
+                        },
+                        {
+                            "questionId": "16",
+                            "text": "Are risk limits, tolerances, and breach protocols well established, and tied directly to risk appetite and used in business processes?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["11", "12", "13"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "No meaningful definition or understanding of the overall corporate risk appetite exists. No formal risk limits or breach protocols have been established.",
+                            "requiredQuestionIds": ["7", "8"]
+                        },
+                        {
+                            "description": "Risk appetite has been defined in qualitative terms for select risks or at an enterprise level. Risk limits may be established for key risks.",
+                            "requiredQuestionIds": ["7", "8", "9"]
+                        },
+                        {
+                            "description": "Defined risk appetite and risk management objectives are in clear support of a broader set of organization objectives and strategies.",
+                            "requiredQuestionIds": ["7", "8", "9", "10"]
+                        },
+                        {
+                            "description": "Organization has a clear view and definition of risk appetite, which reflects the objectives and strategies set for the business by senior management. Formal risk limits, tolerances, and robust breach protocols are established for key risks. Formal requirements for reporting breaches and a formal remediation plan for addressing them are in place.",
+                            "requiredQuestionIds": ["7", "8", "9", "10", "11", "12", "13"]
+                        },
+                        {
+                            "description": "Risk appetite is formally documented and reflective of organization's strategy, including organizational objectives, business plans, and stakeholder expectations. Included are advanced measurement techniques and tolerances established in terms of stress floors related to capital impacts. Risk limits, tolerances, and breach protocols are well established; these are tied directly to risk appetite and used in business processes.",
+                            "requiredQuestionIds": ["7", "8", "9", "10", "11", "12", "13", "14", "15", "16"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionId": "2",
+            "title": "Risk Governance",
+            "subsections": [
+                {
+                    "subsectionId": "3",
+                    "title": "Are risk management activities subject to adequate oversight from organization executive management?",
+                    "questions": [
+                        {
+                            "questionId": "17",
+                            "text": "Are risk management activities subject to adequate oversight from organization executive management?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "18",
+                            "text": "What is executive management’s risk oversight role, i.e., limited, deeply engaged?",
+                            "responses": ["Deeply Engaged", "Limited"]
+                        },
+                        {
+                            "questionId": "19",
+                            "text": "What type of risk information is presented to executive management by program offices, i.e., limited, details?",
+                            "responses": ["Detailed", "Limited"]
+                        },
+                        {
+                            "questionId": "20",
+                            "text": "Is executive management appraised of completed risk assessments and remediation status of operational risks at least annually, as reported by program offices?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["17", "18", "19"]
+                        },
+                        {
+                            "questionId": "21",
+                            "text": "Do program offices regularly inform executive management of material operational risks?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["20"]
+                        },
+                        {
+                            "questionId": "22",
+                            "text": "How often are discussions between executive management and risk owners held?",
+                            "responses": ["Frequent", "Infrequent"],
+                            "dependentIds": ["20"]
+                        },
+                        {
+                            "questionId": "23",
+                            "text": "Is operational risk a recurring agenda item for executive management meetings and key risks part of ongoing discussions?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["21", "22"]
+                        },
+                        {
+                            "questionId": "24",
+                            "text": "Are executive management’s oversight of risk management activities value focused and the key risks factored in developing the business strategy and financial objectives?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["23"]
+                        },
+                        {
+                            "questionId": "25",
+                            "text": "Are top risks reported to the executive management and routinely discussed at their meetings?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["23"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Executive management’s risk oversight role is limited. Limited or ad hoc risk information is presented to executive management by program offices.",
+                            "requiredQuestionIds": ["17", "18", "19"]
+                        },
+                        {
+                            "description": "Executive management is appraised of completed risk assessments and remediation status of operational risks at least annually, as reported by program offices.",
+                            "requiredQuestionIds": ["17", "18", "19", "20"]
+                        },
+                        {
+                            "description": "Program offices regularly inform executive management of material operational risks. Discussions between executive management and risk owners are held as necessary.",
+                            "requiredQuestionIds": ["17", "18", "19", "20", "21", "22"]
+                        },
+                        {
+                            "description": "Operational risk is a recurring agenda item for executive management meetings and key risks are part of ongoing discussions.",
+                            "requiredQuestionIds": ["17", "18", "19", "20", "21", "22", "23"]
+                        },
+                        {
+                            "description": "Executive management’s oversight of risk management activities are value focused and the key risks are factored in developing the business strategy and financial objectives. Top risks are reported to the executive management and routinely discussed at their meetings.",
+                            "requiredQuestionIds": ["17", "18", "19", "20", "21", "22", "23", "24", "25"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "4",
+                    "title": "How is risk management used to support decision making?",
+                    "questions": [
+                        {
+                            "questionId": "26",
+                            "text": "Does risk management exist without silos throughout the organization?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "27",
+                            "text": "Are risk-taking and risk-avoidance decisions consistently applied across the organization?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["26"]
+                        },
+                        {
+                            "questionId": "28",
+                            "text": "Are risks identified during ERM assessments consistently considered in the context of business decisions across the organization?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["27"]
+                        },
+                        {
+                            "questionId": "29",
+                            "text": "Are decisions made based on the organization's articulated risk appetite statement?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["28"]
+                        },
+                        {
+                            "questionId": "30",
+                            "text": "Is the ERM Program risk information provided to senior management to support decision making?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["28"]
+                        },
+                        {
+                            "questionId": "31",
+                            "text": "Does the organization use risk management as a strategic tool?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["29", "30"]
+                        },
+                        {
+                            "questionId": "32",
+                            "text": "Is risk information fully embedded within the organization's decision making process?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["29", "30"]
+                        },
+                        {
+                            "questionId": "33",
+                            "text": "Are audit findings considered as a component of the organization's risk management profile assessment?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["29", "30"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Risk management exists in silos throughout organization and risks are not considered in decision making.",
+                            "requiredQuestionIds": ["26"]
+                        },
+                        {
+                            "description": "Risk-taking and risk-avoidance decisions are inconsistently applied across organization.",
+                            "requiredQuestionIds": ["26", "27"]
+                        },
+                        {
+                            "description": "Risks identified during ERM assessments are somewhat considered in the context of business decisions. This is not performed consistently across organization.",
+                            "requiredQuestionIds": ["26", "27", "28"]
+                        },
+                        {
+                            "description": "Decisions are made based on organization's articulated risk appetite statement. ERM Program risk information is provided to senior management to support decision making.",
+                            "requiredQuestionIds": ["26", "27", "28", "29", "30"]
+                        },
+                        {
+                            "description": "Organization uses risk management as a strategic tool. Risk information is fully embedded within the organization's decision making process. Audit findings are considered as a component of organization's risk management profile assessment.",
+                            "requiredQuestionIds": ["26", "27", "28", "29", "30", "31", "32", "33"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "5",
+                    "title": "Is the role of the risk office value focused?",
+                    "questions": [
+                        {
+                            "questionId": "34",
+                            "text": "Does the risk office complete risk assessments and remediate all key enterprise risks?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "35",
+                            "text": "Is the risk office viewed as a risk management partner by organization program offices?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "36",
+                            "text": "Is the risk office viewed as a trusted risk management business partner?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["34", "35"]
+                        },
+                        {
+                            "questionId": "37",
+                            "text": "Is the ERM Program a critical component of the organization's governance framework?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["34", "35"]
+                        },
+                        {
+                            "questionId": "38",
+                            "text": "Is the risk office executive management's strategic partner and involved in all risk management strategic initiatives?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["36", "37"]
+                        },
+                        {
+                            "questionId": "39",
+                            "text": "Does the risk office report the results of the ERM Program to executive management?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["36", "37"]
+                        },
+                        {
+                            "questionId": "40",
+                            "text": "Are discussions between risk office and risk owners held frequently?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["36", "37"]
+                        },
+                        {
+                            "questionId": "41",
+                            "text": "Does the risk office coordinate risk management activities across the organization to ensure risk management activity is appropriately aligned to risk appetite?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["36", "37"]
+                        },
+                        {
+                            "questionId": "42",
+                            "text": "Does the risk office regularly review and revise risk management standards and policies against industry leading practices?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["36", "37"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Risk office's role is limited to managing the ERM Program.",
+                            "requiredQuestionIds": ["34"]
+                        },
+                        {
+                            "description": "Risk office completes risk assessments and remediates some (not all) key enterprise risks. Risk office is not viewed as a risk management partner by organization program offices.",
+                            "requiredQuestionIds": ["34", "35"]
+                        },
+                        {
+                            "description": "Risk office reports the results of the ERM Program to the executive management and discussions between risk office and risk owners are held as necessary.",
+                            "requiredQuestionIds": ["34", "35", "36", "37"]
+                        },
+                        {
+                            "description": "Risk office is viewed as a trusted risk management business partner and the ERM Program is a critical component of organization's governance framework.",
+                            "requiredQuestionIds": ["34", "35", "36", "37"]
+                        },
+                        {
+                            "description": "Risk office is executive management's strategic partner and is involved in all risk management strategic initiatives. Risk office coordinates risk management activities across organization to ensure risk management activity is appropriately aligned to risk appetite. Risk office regularly reviews and revises risk management standards and policies  against industry leading practices.",
+                            "requiredQuestionIds": ["34", "35", "36", "37", "38", "39", "40", "41", "42"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "6",
+                    "title": "Is ownership of operational risk management and oversight clearly assigned and defined?",
+                    "questions": [
+                        {
+                            "questionId": "43",
+                            "text": "Does risk oversight have a designated owner and a supporting structure?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "44",
+                            "text": "Does ownership of risk include conducting risk-taking and risk-avoidance activities?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "45",
+                            "text": "Do organization program offices consistently view themselves as responsible and accountable for risk management?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "46",
+                            "text": "Does a risk ownership function exist with staffing and responsibilities that are aligned to organization's governance structure?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["43", "44", "45"]
+                        },
+                        {
+                            "questionId": "47",
+                            "text": "Does clear ownership of risk-taking and risk-avoidance decisions exist?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["43", "44", "45"]
+                        },
+                        {
+                            "questionId": "48",
+                            "text": "Is risk embedded into the organization's operating model helping with effective information flow, both vertically and horizontally, and in sustaining reliable oversight over processes, standards, and performance?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["46", "47"]
+                        },
+                        {
+                            "questionId": "49",
+                            "text": "Are the organization's operating model components adaptive to changes in the organization's risk profile or priorities?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["48"]
+                        },
+                        {
+                            "questionId": "50",
+                            "text": "Are risk management activities integrated into risk owners’ day to day business activities?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["48"]
+                        },
+                        {
+                            "questionId": "51",
+                            "text": "Is regular monitoring of risk performance linked to personnel appraisal?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["48"]
+                        },
+                        {
+                            "questionId": "52",
+                            "text": "Are risk owners required to assume accountability for risk-taking and risk-avoidance activities?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["48"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Risk management function/owner does not exist. Organization program offices do not view themselves as responsible and accountable for risk management.",
+                            "requiredQuestionIds": ["43"]
+                        },
+                        {
+                            "description": "Risk oversight has a designated owner and a supporting structure. Ownership of risk may include conducting risk-taking and risk-avoidance activities. Organization program offices inconsistently view themselves as responsible and accountable for risk management.",
+                            "requiredQuestionIds": ["43", "44", "45"]
+                        },
+                        {
+                            "description": "A risk ownership function exists with staffing and responsibilities that are aligned to organization's governance structure. Clear ownership of risk-taking and risk-avoidance decisions exist.",
+                            "requiredQuestionIds": ["43", "44", "45", "46", "47"]
+                        },
+                        {
+                            "description": "Risk is embedded into organization's operating model helping with effective information flow, both vertically and horizontally, and in sustaining reliable oversight over processes, standards, and performance.",
+                            "requiredQuestionIds": ["43", "44", "45", "46", "47", "48"]
+                        },
+                        {
+                            "description": "Organization's operating model components are adaptive to changes in the organization's risk profile or priorities. Risk management activities are integrated into risk owners’ day to day business activities. Regular monitoring of risk performance is linked to personnel appraisal. Risk owners are required to assume accountability for risk-taking and risk-avoidance activities.",
+                            "requiredQuestionIds": ["43", "44", "45", "46", "47", "48", "49", "50", "51", "52"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "7",
+                    "title": "Have risk management roles and responsibilities been established?",
+                    "questions": [
+                        {
+                            "questionId": "53",
+                            "text": "Does the organization define an organizational model for risk governance and responsibility?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "54",
+                            "text": "Are formal risk management roles and responsibilities assumed by organization program offices?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["53"]
+                        },
+                        {
+                            "questionId": "55",
+                            "text": "Does the organization formally document an organizational model for risk governance that is supported by defined roles and responsibilities?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["54"]
+                        },
+                        {
+                            "questionId": "56",
+                            "text": "Is a consistent organizational model for corporate governance implemented across the organization?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["55"]
+                        },
+                        {
+                            "questionId": "57",
+                            "text": "Are risk governance responsibilities monitored at the program offices and enterprise level and linked to organization's overall corporate objectives?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["56"]
+                        },
+                        {
+                            "questionId": "58",
+                            "text": "Is the three lines of defense structure fully established and integrated within the enterprise-wide risk governance function to include defined roles and responsibilities?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["56"]
+                        },
+                        {
+                            "questionId": "59",
+                            "text": "Does the structure of the ERM Program ensure risk management activities are subject to effective independent review?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["56"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Organization does not define an organizational model for risk governance and responsibility.",
+                            "requiredQuestionIds": ["53"]
+                        },
+                        {
+                            "description": "Informal risk management roles and responsibilities are assumed by organization program offices.",
+                            "requiredQuestionIds": ["53", "54"]
+                        },
+                        {
+                            "description": "Organization formally documents an organizational model for risk governance that is supported by defined roles and responsibilities.",
+                            "requiredQuestionIds": ["53", "54", "55"]
+                        },
+                        {
+                            "description": "A consistent organizational model for corporate governance is implemented across organization. This model establishes clear reporting lines for risk escalation and role authorization according to the three lines of defense.",
+                            "requiredQuestionIds": ["53", "54", "55", "56"]
+                        },
+                        {
+                            "description": "Risk governance responsibilities are monitored at the program offices and enterprise level and linked to organization's overall corporate objectives. The three lines of defense structure is fully established and integrated within the enterprise-wide risk governance function to include defined roles and responsibilities. The structure of the ERM Program ensures risk management activities are subject to effective independent review.",
+                            "requiredQuestionIds": ["53", "54", "55", "56", "57", "58", "59"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionId": "3",
+            "title": "Risk Culture",
+            "subsections": [
+                {
+                    "subsectionId": "8",
+                    "title": "Does senior management demonstrate a strong commitment to risk management?",
+                    "questions": [
+                        {
+                            "questionId": "60",
+                            "text": "Is the organization's business culture and operating philosophy's relationship with risk management clearly understood?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "61",
+                            "text": "Is the organization's risk culture driven by more than a few unifying big-picture themes?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "62",
+                            "text": "How is the organization's risk culture communicated, i.e., senior management, risk office?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "63",
+                            "text": "Are the policies, procedures, and methodology of the risk management communicated and widely understood by program offices personnel?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["60", "61", "62"]
+                        },
+                        {
+                            "questionId": "64",
+                            "text": "Does the organization view risk ownership, transparency, and forward-looking actions as common themes of firm risk culture?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["63"]
+                        },
+                        {
+                            "questionId": "65",
+                            "text": "Do program offices practice and embrace risk management activities?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["63"]
+                        },
+                        {
+                            "questionId": "66",
+                            "text": "Does organization senior management embrace risk management activities and integrate it into all program offices activities?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["64", "65"]
+                        },
+                        {
+                            "questionId": "67",
+                            "text": "Does the risk office leads by example, making risk management a clear priority and encouraging appropriate risk management behavior at every level of the organizational?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["64", "65"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Organization's business culture and operating philosophy's relationship with risk management is loosely understood, if at all. Inconsistent support for risk management is observed.",
+                            "requiredQuestionIds": ["60"]
+                        },
+                        {
+                            "description": "Organization's risk culture is driven by a few unifying big-picture themes, often communicated by risk office.",
+                            "requiredQuestionIds": ["60", "61", "62"]
+                        },
+                        {
+                            "description": "The policies, procedures, and methodology of the risk management are communicated and widely understood by program offices personnel.",
+                            "requiredQuestionIds": ["60", "61", "62", "63"]
+                        },
+                        {
+                            "description": "Organization views risk ownership, transparency, and forward-looking actions as common themes of firm risk culture. Program offices practice and embrace risk management activities.",
+                            "requiredQuestionIds": ["60", "61", "62", "63", "64", "65"]
+                        },
+                        {
+                            "description": "Organization senior management embraces risk management activities and integrates it into all program offices activities. Risk office leads by example, making risk management a clear priority and encouraging appropriate risk management behavior at every level of the organizational.",
+                            "requiredQuestionIds": ["60", "61", "62", "63", "64", "65", "66", "67"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "9",
+                    "title": "Does the ERM Program promote risk communication?",
+                    "questions": [
+                        {
+                            "questionId": "68",
+                            "text": "Does the organization have a repeatable risk communication process in place?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "69",
+                            "text": "Does formal risk communication occur without silos throughout the organization?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "70",
+                            "text": "Does the ERM Program provide formal plans for risk communication?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["68", "69"]
+                        },
+                        {
+                            "questionId": "71",
+                            "text": "Does risk communication within program offices follow defined protocols and processes?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["68", "69"]
+                        },
+                        {
+                            "questionId": "72",
+                            "text": "Does the ERM Program define processes that proactively manage channels of risk communication?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["70", "71"]
+                        },
+                        {
+                            "questionId": "73",
+                            "text": "Do program offices conduct both planned and unplanned (as needed) risk communication?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["70", "71"]
+                        },
+                        {
+                            "questionId": "74",
+                            "text": "Is the external communication of risk well defined and proactively managed by risk office?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["70", "71"]
+                        },
+                        {
+                            "questionId": "75",
+                            "text": "Is risk communication dynamic and fully embedded in organization's operational processes?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["72", "73", "74"]
+                        },
+                        {
+                            "questionId": "76",
+                            "text": "Does the ERM Program support dynamic enterprise communication, enabling both top-down and bottom-up risk management?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["72", "73", "74"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Organization has no repeatable risk communication process in place.",
+                            "requiredQuestionIds": ["68"]
+                        },
+                        {
+                            "description": "Formal risk communication occurs in silos throughout organization.",
+                            "requiredQuestionIds": ["68", "69"]
+                        },
+                        {
+                            "description": "The ERM Program provides formal plans for risk communication. Risk communication within program offices follows defined protocols and processes.",
+                            "requiredQuestionIds": ["68", "69", "70", "71"]
+                        },
+                        {
+                            "description": "The ERM Program defines processes that proactively manage channels of risk communication. Program offices conduct both planned and unplanned (as needed) risk communication. The external communication of risk is well defined and proactively managed by risk office.",
+                            "requiredQuestionIds": ["68", "69", "70", "71", "72", "73", "74"]
+                        },
+                        {
+                            "description": "Risk communication is dynamic and fully embedded in organization's operational processes. The ERM Program supports dynamic enterprise communication, enabling both top-down and bottom-up risk management.",
+                            "requiredQuestionIds": ["68", "69", "70", "71", "72", "73", "74", "75", "76"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "10",
+                    "title": "Does organization's culture emphasize the positive relationship between risk management and performance?",
+                    "questions": [
+                        {
+                            "questionId": "77",
+                            "text": "Does the organization appreciate risk management skills?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "78",
+                            "text": "Do personnel consider risk performance and risk management to be connected?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "79",
+                            "text": "Is the link between organization's business culture and need for risk management clearly understood?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["77", "78"]
+                        },
+                        {
+                            "questionId": "80",
+                            "text": "Is risk management a performance measure of the organization?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["77", "78"]
+                        },
+                        {
+                            "questionId": "81",
+                            "text": "Is risk management embedded at the program offices performance level?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["79", "80"]
+                        },
+                        {
+                            "questionId": "82",
+                            "text": "Are the organization's performance targets adjusted for risk?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["79", "80"]
+                        },
+                        {
+                            "questionId": "83",
+                            "text": "Are the roles and responsibilities associated with organization's ERM Program activities incorporated into personnel goal setting, performance appraisal, and organizational reward structures?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["81", "81"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Organization does not appreciate risk management skills. Personnel do not consider firm performance and risk management to be connected.",
+                            "requiredQuestionIds": ["77"]
+                        },
+                        {
+                            "description": "The link between organization's business culture and need for risk management are loosely understood.",
+                            "requiredQuestionIds": ["77", "78"]
+                        },
+                        {
+                            "description": "Risk management is a performance measure of organization, but is not embedded at the program offices performance level.",
+                            "requiredQuestionIds": ["77", "78", "79", "80"]
+                        },
+                        {
+                            "description": "Organization's performance targets are adjusted for risk.",
+                            "requiredQuestionIds": ["77", "78", "79", "80", "81", "82"]
+                        },
+                        {
+                            "description": "The roles and responsibilities associated with organization's ERM Program activities are incorporated into personnel goal setting, performance appraisal, and organizational reward structures.",
+                            "requiredQuestionIds": ["77", "78", "79", "80", "81", "82", "83"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "11",
+                    "title": "Are education and training used to strengthen risk management activities?",
+                    "questions": [
+                        {
+                            "questionId": "84",
+                            "text": "Does senior management have an appreciation for risk management skills within the organization?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "85",
+                            "text": "Are ERM trainings limited or do training opportunities occur frequently?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "86",
+                            "text": "Is the ERM Program training select and targeted, or widespread and holistic?",
+                            "responses": ["Widespread/Holistic", "Select/Targeted"]
+                        },
+                        {
+                            "questionId": "87",
+                            "text": "Does the ERM Program training refine risk management skills for senior management?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["84", "85", "86"]
+                        },
+                        {
+                            "questionId": "88",
+                            "text": "Does training for senior management align risk management skills to added organization value and performance?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["87"]
+                        },
+                        {
+                            "questionId": "89",
+                            "text": "Are integrated training and education programs for risk management linked to role and development needs?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["88"]
+                        },
+                        {
+                            "questionId": "90",
+                            "text": "Does senior management regularly review firm sponsored risk management trainings to bridge any identified gaps between training content and organization needs?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["88"]
+                        },
+                        {
+                            "questionId": "91",
+                            "text": "Does senior management regularly participate in and lead risk management education and training initiatives?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["88"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Senior management have little appreciation for risk management skills and ERM trainings are limited.",
+                            "requiredQuestionIds": ["84"]
+                        },
+                        {
+                            "description": "The ERM Program training is select and targeted, rather than widespread and holistic.",
+                            "requiredQuestionIds": ["84", "85"]
+                        },
+                        {
+                            "description": "The ERM Program training refines risk management skills for senior management. Training opportunities occurs infrequently.",
+                            "requiredQuestionIds": ["84", "85", "86", "87"]
+                        },
+                        {
+                            "description": "Training for senior management aligns risk management skills to added organization value and performance. Senior management regularly review firm sponsored risk management trainings to bridge any identified gaps between training content and organization needs.",
+                            "requiredQuestionIds": ["84", "85", "86", "87", "88"]
+                        },
+                        {
+                            "description": "Integrated training and education programs for risk management are linked to role and development needs. Senior management regularly participate in and lead risk management education and training initiatives.",
+                            "requiredQuestionIds": ["84", "85", "86", "87", "88", "89", "90", "91"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionId": "4",
+            "title": "Risk Assessment & Measurement",
+            "subsections": [
+                {
+                    "subsectionId": "12",
+                    "title": "Is risk management terminology clearly defined and consistently applied in the ERM Program?",
+                    "questions": [
+                        {
+                            "questionId": "92",
+                            "text": "Does a risk taxonomy exist?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "93",
+                            "text": "Is the risk taxonomy defined and developed for risk identification purposes?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["92"]
+                        },
+                        {
+                            "questionId": "94",
+                            "text": "Does the organization use a risk taxonomy to identify and assess risk?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["92"]
+                        },
+                        {
+                            "questionId": "95",
+                            "text": "Is the risk taxonomy consistently applied across program offices?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["93", "94"]
+                        },
+                        {
+                            "questionId": "96",
+                            "text": "The organization risk taxonomy is used consistently as a foundation to assess and measure risk across the entire organization.",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["93", "94"]
+                        },
+                        {
+                            "questionId": "97",
+                            "text": "Does the ERM Program clearly define risk and standard risk management terminology?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["95", "96"]
+                        },
+                        {
+                            "questionId": "98",
+                            "text": "Is risk management terminology clearly defined and consistently applied in the ERM Program?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["95", "96"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Inconsistent risk definitions are applied. A organization risk taxonomy is not used to identify and assess risk.",
+                            "requiredQuestionIds": ["92"]
+                        },
+                        {
+                            "description": "The ERM Program provides some definitions or risk. A organization risk taxonomy exists but is undeveloped for risk identification purposes.",
+                            "requiredQuestionIds": ["92"]
+                        },
+                        {
+                            "description": "The ERM Program defines risk and risk assessment criteria at a high level. A risk taxonomy is defined but used inconsistently across program offices.",
+                            "requiredQuestionIds": ["92", "93", "94"]
+                        },
+                        {
+                            "description": "The organization risk taxonomy is defined and used consistently across program offices.",
+                            "requiredQuestionIds": ["92", "93", "94", "95", "96"]
+                        },
+                        {
+                            "description": "The ERM Program clearly defines risk and standard risk management terminology. The organization risk taxonomy is used consistently as a foundation to assess and measure risk across the entire organization.",
+                            "requiredQuestionIds": ["92", "93", "94", "95", "96", "97", "98"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "13",
+                    "title": "Does the ERM Program prescribe a standard methodology for identifying risks?",
+                    "questions": [
+                        {
+                            "questionId": "99",
+                            "text": "Does the organization frequently identify risks?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "100",
+                            "text": "Are risks identified through an enterprise approach (YES)?  NO indicates program offices only identify risk locally and produce limited documentation?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["99"]
+                        },
+                        {
+                            "questionId": "101",
+                            "text": "Does the ERM Program provide an enterprise wide approach to risk identification through the use of the ERM tool?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["99"]
+                        },
+                        {
+                            "questionId": "102",
+                            "text": "Does the ERM Program identify risks (including new and/or emerging risks) within organization using the ERM tool?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["100", "101"]
+                        },
+                        {
+                            "questionId": "103",
+                            "text": "Are procedures applied consistently across program offices?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["100", "101"]
+                        },
+                        {
+                            "questionId": "104",
+                            "text": "Is the organization's approach to risk identification both top-down and bottom-up?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["102", "103"]
+                        },
+                        {
+                            "questionId": "105",
+                            "text": "Are ERM Program assessment templates used to identify risk on a continuous basis, leveraging internal and external risk data, and defined risk metrics?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["102", "103"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Ad hoc and infrequent approach to risk identification.",
+                            "requiredQuestionIds": ["99"]
+                        },
+                        {
+                            "description": "Program offices identify risk locally and produce limited documentation.",
+                            "requiredQuestionIds": ["99"]
+                        },
+                        {
+                            "description": "The ERM Program provides an enterprise wide approach to risk identification through the use of the ERM tool. Procedures are applied consistently across program offices.",
+                            "requiredQuestionIds": ["99", "100", "101", "102"]
+                        },
+                        {
+                            "description": "The ERM Program identifies risks (including new and/or emerging risks) within organization using the ERM tool. Approach to risk identification is both top-down and bottom-up.",
+                            "requiredQuestionIds": ["99", "100", "101", "102", "103", "104"]
+                        },
+                        {
+                            "description": "The ERM Program assessment templates are used to identify risk on a continuous basis, leveraging internal and external risk data, and defined risk metrics.",
+                            "requiredQuestionIds": ["99", "100", "101", "102", "103", "104", "105"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionId": "5",
+            "title": "Risk Management & Monitoring",
+            "subsections": [
+                {
+                    "subsectionId": "14",
+                    "title": "Does the ERM Program identify risk and controls that require mitigation?",
+                    "questions": [
+                        {
+                            "questionId": "106",
+                            "text": "Does the organization have robust processes to identify risks for mitigation?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "107",
+                            "text": "Does the ERM Program consistently identify gaps in controls for risk mitigation?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["106"]
+                        },
+                        {
+                            "questionId": "108",
+                            "text": "Does the ERM Program identify gaps in controls for risk mitigation and consistently applies corrective action?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["106"]
+                        },
+                        {
+                            "questionId": "109",
+                            "text": "Does the organization have a standard recurring process is in place to identify risk mitigation gaps and to track the progress of remediation activities against corrective action plans, or is the process limited or ad hoc?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["107", "108"]
+                        },
+                        {
+                            "questionId": "110",
+                            "text": "Does the ERM Program utilize a robust process to identify gaps for risk mitigation?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["109"]
+                        },
+                        {
+                            "questionId": "111",
+                            "text": "Are program offices supported by risk office to implement effective mitigation strategies?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["109"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Organization has limited or ad hoc processes to identify risks for mitigation.",
+                            "requiredQuestionIds": ["106"]
+                        },
+                        {
+                            "description": "The ERM Program inconsistently identifies gaps in controls for risk mitigation.",
+                            "requiredQuestionIds": ["106"]
+                        },
+                        {
+                            "description": "The ERM Program identifies gaps in controls for risk mitigation but inconsistently applies corrective action.",
+                            "requiredQuestionIds": ["106", "107", "108"]
+                        },
+                        {
+                            "description": "A standard recurring process is in place to identify risk mitigation gaps and to track the progress of remediation activities against corrective action plans.",
+                            "requiredQuestionIds": ["106", "107", "108", "109"]
+                        },
+                        {
+                            "description": "The ERM Program utilizes a robust process to identify gaps for risk mitigation. Program offices are supported by risk office to implement effective mitigation strategies.",
+                            "requiredQuestionIds": ["106", "107", "108", "109", "110", "111"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "15",
+                    "title": "Does the ERM Program monitor risk?",
+                    "questions": [
+                        {
+                            "questionId": "112",
+                            "text": "Does the organization have robust processes to monitor risks, i.e. risk management activities are proactive and not reactive?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "113",
+                            "text": "Does the risk office consistently monitor organization's key risks?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "114",
+                            "text": "Does the risk office perform key risk management and monitor identified major risk areas?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["112", "113"]
+                        },
+                        {
+                            "questionId": "115",
+                            "text": "Does the ERM Program utilize key risk indicators (KRIs), such as the number of corrective action plans outstanding/overdue, to monitor risk?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["114"]
+                        },
+                        {
+                            "questionId": "116",
+                            "text": "Are risk monitoring responsibilities spread seamlessly across organization program offices and complemented by the work of risk office?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["115"]
+                        },
+                        {
+                            "questionId": "117",
+                            "text": "Are KRIs fully integrated into the ERM Program and allow for the active monitoring of organization's risks by senior management?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["115"]
+                        },
+                        {
+                            "questionId": "118",
+                            "text": "Are program offices' risk monitoring activities tracked and reviewed by risk office?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["115"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Organization has limited or ad hoc processes to monitor risks. Risk management activities are reactive.",
+                            "requiredQuestionIds": ["112"]
+                        },
+                        {
+                            "description": "Risk office inconsistently monitors organization's key risks.",
+                            "requiredQuestionIds": ["112", "113"]
+                        },
+                        {
+                            "description": "Risk office performs key risk management and monitors identified major risk areas.",
+                            "requiredQuestionIds": ["112", "113", "114"]
+                        },
+                        {
+                            "description": "The ERM Program utilizes key risk indicators (KRIs), such as the number of corrective action plans outstanding/overdue, to monitor risk.",
+                            "requiredQuestionIds": ["112", "113", "114", "115"]
+                        },
+                        {
+                            "description": "Risk monitoring responsibilities are spread seamlessly across organization program offices and complemented by the work of risk office. KRIs are fully integrated into the ERM Program and allow for the active monitoring of organization's risks by senior management. Program offices' risk monitoring activities are tracked and reviewed by risk office.",
+                            "requiredQuestionIds": ["112", "113", "114", "115", "116", "117", "118"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionId": "6",
+            "title": "Risk Reporting & Insights",
+            "subsections": [
+                {
+                    "subsectionId": "16",
+                    "title": "Do reporting mechanisms exist to support proactive risk management?",
+                    "questions": [
+                        {
+                            "questionId": "119",
+                            "text": "Is risk reporting ad hoc or follow a regular interval reporting?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "120",
+                            "text": "Does the organization's risk reporting focus on risk activities rather than variances in outcomes?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "121",
+                            "text": "Does the ERM Prgoram define select risk reporting for senior management?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "122",
+                            "text": "Does the ERM Program promote regular and robust risk reporting at the enterprise and program office levels?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["119", "120", "121"]
+                        },
+                        {
+                            "questionId": "123",
+                            "text": "Does the organization's risk reporting incorporate external sources of risk information to measure emerging risks?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["119", "120", "121"]
+                        },
+                        {
+                            "questionId": "124",
+                            "text": "Does the ERM Program support the escalation of key risk management information?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["122", "123"]
+                        },
+                        {
+                            "questionId": "125",
+                            "text": "Is automated risk reporting embedded in organization operations and is partially integrated across risk classes?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["122", "123"]
+                        },
+                        {
+                            "questionId": "126",
+                            "text": "Does the ERM Program support a single comprehensive view of risk?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["124", "125"]
+                        },
+                        {
+                            "questionId": "127",
+                            "text": "Does automated risk reporting occur on a real-time basis across all risk classes to appropriate organization internal and external stakeholders?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["124", "125"]
+                        },
+                        {
+                            "questionId": "128",
+                            "text": "Does reported risk information allow for active monitoring of organization risk and performance, and reporting supports day-to-day decision making?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["124", "125"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Risk reports are ad hoc. Organization reporting focuses on variance in outcomes rather than risk activities.",
+                            "requiredQuestionIds": ["119"]
+                        },
+                        {
+                            "description": "The ERM Program defines select risk reporting for senior management.",
+                            "requiredQuestionIds": ["119", "120", "121"]
+                        },
+                        {
+                            "description": "The ERM Program promotes regular and robust risk reporting at the enterprise and program office level. Organization risk reporting incorporates external sources of risk information to measure emerging risks.",
+                            "requiredQuestionIds": ["119", "120", "121", "122", "123"]
+                        },
+                        {
+                            "description": "The ERM Program supports the escalation of key risk management information. Automated risk reporting is embedded in organization operations and is partially integrated across risk classes.",
+                            "requiredQuestionIds": ["119", "120", "121", "122", "123", "124", "125"]
+                        },
+                        {
+                            "description": "The ERM Program supports a single comprehensive view of risk. Automated risk reporting occurs on a real-time basis across all risk classes to appropriate organization internal and external stakeholders. Reported risk information allows for active monitoring of organization risk and performance, and reporting supports day-to-day decision making.",
+                            "requiredQuestionIds": ["119", "120", "121", "122", "123", "124", "125", "126", "127", "128"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "17",
+                    "title": "How frequently are material risks communicated to senior management?",
+                    "questions": [
+                        {
+                            "questionId": "129",
+                            "text": "Are risk reports used to enable the organization to undersand risk from a historical perspective?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "130",
+                            "text": "Is risk communication lead by the risk office?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "131",
+                            "text": "Does the ERM Program use formal communication plans defined by risk owner to report risk information?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["129", "130"]
+                        },
+                        {
+                            "questionId": "132",
+                            "text": "Does risk communication follow defined protocols and processes?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["129", "130"]
+                        },
+                        {
+                            "questionId": "133",
+                            "text": "Does both planned and unplanned (as needed) risk communication occur between and within risk office and organization program offices?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["131", "132"]
+                        },
+                        {
+                            "questionId": "134",
+                            "text": "Is risk communication dynamic and focused both within and among organization program offices and risk office?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["133"]
+                        },
+                        {
+                            "questionId": "135",
+                            "text": "Does the ERM Program fully embed risk communication in the operational activities of each program office?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["133"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Risk management activities and information are shared within organization on a need-to-know basis.",
+                            "requiredQuestionIds": ["129"]
+                        },
+                        {
+                            "description": "Risk reports enable organization to understand risk from a historical perspective. Risk communication is lead by risk office.",
+                            "requiredQuestionIds": ["129", "130"]
+                        },
+                        {
+                            "description": "The ERM Program uses formal communication plans defined by risk owner to report risk information. Risk communication follows defined protocols and processes.",
+                            "requiredQuestionIds": ["129", "130", "131", "132"]
+                        },
+                        {
+                            "description": "Both planned and unplanned (as needed) risk communication occurs between and within risk office and organization program offices.",
+                            "requiredQuestionIds": ["129", "130", "131", "132", "133"]
+                        },
+                        {
+                            "description": "Risk communication is dynamic and focused both within and among organization program offices and risk office. The ERM Program fully embeds risk communication in the operational activities of each program office.",
+                            "requiredQuestionIds": ["129", "130", "131", "132", "133", "134", "135"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "sectionId": "7",
+            "title": "Data & Technology",
+            "subsections": [
+                {
+                    "subsectionId": "18",
+                    "title": "Is data integrity a component of the ERM Program?",
+                    "questions": [
+                        {
+                            "questionId": "136",
+                            "text": "Does the ERM Program provide clear definition of risk data?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "137",
+                            "text": "Is risk data standard with consistent quality?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "138",
+                            "text": "Are there any known issues with risk data sources, access, and change controls?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "139",
+                            "text": "Does the ERM Program have defined roles and reports to monitor data quality/integrity (complete, accurate, recent, and secure)?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "140",
+                            "text": "Within the ERM Program, are organization business systems/tools and analytics the main source of risk data?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["136", "137", "138", "139"]
+                        },
+                        {
+                            "questionId": "141",
+                            "text": "Are organization business and risk systems/tools integrated into all key and scheduled ERM Program risk reporting?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["136", "137", "138", "139"]
+                        },
+                        {
+                            "questionId": "142",
+                            "text": "Are organization business and risk systems/tools are integrated for all scheduled and unplanned ERM Program risk reporting?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["136", "137", "138", "139"]
+                        },
+                        {
+                            "questionId": "143",
+                            "text": "Are data quality policies outlined to detail minimum measures of data quality?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["136", "137", "138", "139"]
+                        },
+                        {
+                            "questionId": "144",
+                            "text": "Do data quality policies set requirements for data integrity (complete, accurate, recent, and secure) checks in risk processing and reporting?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["136", "137", "138", "139"]
+                        },
+                        {
+                            "questionId": "145",
+                            "text": "Do data integrity checks exist beyond data processing and occur across each risk-control library?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["140", "141", "142", "143", "144"]
+                        },
+                        {
+                            "questionId": "146",
+                            "text": "Are data integrity checks embedded into program office processes and integrated into data libraries?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["145"]
+                        },
+                        {
+                            "questionId": "147",
+                            "text": "Does the ERM Program include risk flags that are programmed for real-time monitoring using data scorecards?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["145"]
+                        },
+                        {
+                            "questionId": "148",
+                            "text": "Are scorecards extensively relied upon to ensure the quality of data?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["145"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "The ERM Program provides no clear definition of risk data. Data is nonstandard, with varying levels of quality. Known issues exist with data sources, access, and change controls.",
+                            "requiredQuestionIds": ["136"]
+                        },
+                        {
+                            "description": "Organization's data governance is broadly defined. Key risk data has limited standardization. Defined roles and reports exist to monitor data quality/integrity (complete, accurate, recent, and secure).",
+                            "requiredQuestionIds": ["136", "137", "138", "139"]
+                        },
+                        {
+                            "description": "Within the ERM Program, organization business systems/tools and analytics are the main source of risk data. Data quality policies are outlined to detail minimum measures of data quality. Data quality policies are set requirements for data integrity (complete, accurate, recent, and secure) checks in risk processing and reporting.",
+                            "requiredQuestionIds": ["136", "137", "138", "139", "140", "141", "142", "143", "144"]
+                        },
+                        {
+                            "description": "Organization business and risk systems/tools are integrated into all key and scheduled ERM Program risk reporting. Data integrity checks exist beyond data processing and occur across each risk-control library.",
+                            "requiredQuestionIds": ["136", "137", "138", "139", "140", "141", "142", "143", "144", "145"]
+                        },
+                        {
+                            "description": "Organization business and risk systems/tools are integrated for all scheduled and unplanned ERM Program risk reporting. Risk flags are programmed for real-time monitoring using data scorecards. Data integrity checks are embedded into program office processes and integrated into data libraries. Scorecards are extensively relied upon to ensure the quality of data.",
+                            "requiredQuestionIds": ["136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "146", "147", "148"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "19",
+                    "title": "Does the ERM Program utilize data analytics to identify and assess risks?",
+                    "questions": [
+                        {
+                            "questionId": "149",
+                            "text": "Does the ERM Program identify risk analytics?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "150",
+                            "text": "Does the ERM Program link risk analytics for specific decision making?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "151",
+                            "text": "Are risk analytics defined by the ERM Program focus beyond risk function activities, e.g. number of risk assessments?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "152",
+                            "text": "Does the ERM Program define key qualitative and quantitative risk analytics or use only select qualitative and quantitative risk analytics?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["149", "150", "151"]
+                        },
+                        {
+                            "questionId": "153",
+                            "text": "Do risk data, analytics and tools support the risk identification and assessment process?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["152"]
+                        },
+                        {
+                            "questionId": "154",
+                            "text": "Do key analytics, risk data, systems and tools support enterprise wide organization risk reporting and advanced risk measurement and assessment stress/ scenario testing, and capital modeling?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["152"]
+                        },
+                        {
+                            "questionId": "155",
+                            "text": "Are the process for the accumulation and use of risk data is consistently defined?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["152"]
+                        },
+                        {
+                            "questionId": "156",
+                            "text": "Does the ERM Program enable business systems/tools?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["152"]
+                        },
+                        {
+                            "questionId": "157",
+                            "text": "Does the ERM Program use business systems/tools to monitor established organization processes?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["152"]
+                        },
+                        {
+                            "questionId": "158",
+                            "text": "Does the ERM Program have implemented functionality for ongoing risk reporting to delegated risk owners?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["152"]
+                        },
+                        {
+                            "questionId": "159",
+                            "text": "Do the ERM Program processes support building additional functionality for advanced risk measurement and modeling, as necessary?",
+                            "responses": ["Yes", "No"],
+                            "dependentIds": ["153", "154", "155", "156", "157", "158"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "The ERM Program either does not identify risk analytics or does not link risk analytics for specific decision making.",
+                            "requiredQuestionIds": ["149"]
+                        },
+                        {
+                            "description": "Select risk analytics are defined by the ERM Program, but are focused on risk function activities, e.g. number of risk assessments. The process for the accumulation and use of risk data is inconsistently defined.",
+                            "requiredQuestionIds": ["149", "150", "151"]
+                        },
+                        {
+                            "description": "The ERM Program uses select qualitative and quantitative risk analytics. Business systems/tools are used to monitor established organization processes.",
+                            "requiredQuestionIds": ["149", "150", "151", "152"]
+                        },
+                        {
+                            "description": "The ERM Program defines key qualitative and quantitative risk analytics and enabling business systems/tools. Functionality is implemented for ongoing risk reporting to delegated risk owners. Risk data, analytics and tools support the risk identification and assessment process.",
+                            "requiredQuestionIds": ["149", "150", "151", "152", "153", "154", "155", "156", "157", "158"]
+                        },
+                        {
+                            "description": "Key analytics, risk data, systems and tools support enterprise wide organization risk reporting and advanced risk measurement and assessment stress/ scenario testing, and capital modeling. The ERM Program processes support building additional functionality for advanced risk measurement and modeling, as necessary.",
+                            "requiredQuestionIds": ["149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159"]
+                        }
+                    ]
+                },
+                {
+                    "subsectionId": "20",
+                    "title": "Does the ERM Program utilize technology to perform risk management activities?",
+                    "questions": [
+                        {
+                            "questionId": "160",
+                            "text": "Are key risk tools centralized or exist in program office silos in numerous Excel spreadsheets on multiple shared drives or on an individual computer?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "161",
+                            "text": "Is there a common inventory of key risk tools used throughout organization?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "162",
+                            "text": "Is the ERM Program risk management supported by automated standard tools?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "163",
+                            "text": "Are risk tools fully rationalized for duplication?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "164",
+                            "text": "Do standard design and process exist for each risk tool?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "165",
+                            "text": "Are baseline and configurable aspects of risk tool design, rollout, and change authorization enforced by risk office?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "166",
+                            "text": "Does the organization manage configuration change to ensure the ongoing reliability of risk management tools?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "167",
+                            "text": "Does the ERM Program use automated compliance technology to store and analyze risk data?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "168",
+                            "text": "Do automated compliance technology cover activities in all phases of the ERM Program risk management lifecycle?",
+                            "responses": ["Yes", "No"]
+                        },
+                        {
+                            "questionId": "169",
+                            "text": "Are automated and integrated compliance technology used to store, manage and report real time ERM Program risk data?",
+                            "responses": ["Yes", "No"]
+                        }
+                    ],
+                    "scoreLevels": [
+                        {
+                            "description": "Key risk tools exist in program office silos in numerous Excel spreadsheets on multiple shared drives or on an individual computer. There is no common inventory of key risk tools used throughout organization.",
+                            "requiredQuestionIds": ["160"]
+                        },
+                        {
+                            "description": "The ERM Program risk management is manual supported by standard tools (e.g. spreadsheets). Risk tools are inventoried, but are not fully rationalized for duplication.",
+                            "requiredQuestionIds": ["160", "161"]
+                        },
+                        {
+                            "description": "The ERM Program uses automated compliance technology to store and analyze risk data. A standard design and process exist for each risk tool.",
+                            "requiredQuestionIds": ["160", "161", "162", "163", "164"]
+                        },
+                        {
+                            "description": "Automated compliance technology covers activities in all phases of the ERM Program risk management lifecycle. Baseline and configurable aspects of risk tool design, rollout, and change authorization are enforced by risk office.",
+                            "requiredQuestionIds": ["160", "161", "162", "163", "165", "166"]
+                        },
+                        {
+                            "description": "Automated and integrated compliance technology is used to store, manage and report real time ERM Program risk data. Organization manages configuration change to ensure the ongoing reliability of risk management tools.",
+                            "requiredQuestionIds": ["160", "161", "162", "163", "165", "166", "167", "168", "169"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

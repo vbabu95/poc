@@ -1,0 +1,19 @@
+{
+    "id": "http://types/Score",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "required": ["description","requiredQuestionIds"],
+    "properties": {
+        "description": {
+            "description": "A description of the score",
+            "type": "string"
+        },
+        "requiredQuestionIds": {
+            "description": "A collection of questions ids required to meet this score",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+:host-context {
+    width: 100%;
+    height: 100%;
+
+    .survey-router-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* styles should be scoped under host-context */
+    .survey-radar-chart {
+        width: 100%;
+        //height: 576px;
+        max-width: 576px;
+        overflow: hidden;
+
+        /deep/ .radar {
+            width: 100%;
+            height: auto;
+        }
+
+        /deep/ .axis {
+                
+            text {
+                font-size: 16px;
+            }
+        }
+    }
+
+    // FIXME:  remove this ie11 specific CSS if possible
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .survey-radar-chart { 
+            height: 576px;
+        }
+    }
+}

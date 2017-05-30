@@ -1,0 +1,25 @@
+{
+    "id": "http://types/Login",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "required": ["email"],
+    "additionalProperties": false,
+    "properties": {
+        "email": {
+            "description": "The userName of the authenticated user",
+            "type": "string"
+        },
+        "password": {
+            "description": "The password of the authenticated user (not returned in response)",
+            "type": "string"
+        },
+        "user": {
+            "description": "The authenticated user",
+            "$ref": "User"
+        },
+        "token": {
+            "description": "JWT token containing claims for exp, roles, and permissions (not part of request, only response)",
+            "type": "string"
+        }
+    }
+}

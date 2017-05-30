@@ -1,0 +1,24 @@
+{
+    "id": "http://types/Subsection",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "required": ["subsectionId","title","questions","scoreLevels"],
+    "properties": {
+        "subsectionId": {
+            "description": "The identifier of the object",
+            "type": "string"
+        },
+        "title": {
+            "description": "The title of the subsection",
+            "type": "string"
+        },
+        "questions": {
+            "description": "The questions within the subsection",
+            "$ref": "QuestionCollection"
+        },
+        "scoreLevels": {
+            "description": "Descriptions of the scoring levels for the subsection",
+            "$ref": "ScoreCollection"
+        }
+    }
+}
