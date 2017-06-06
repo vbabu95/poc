@@ -5,6 +5,7 @@ import {Router} from '@angular/router';
 import SurveyProvider from '../../providers/survey-provider';
 import ScoreStatusProvider from '../../providers/score-status-provider';
 import _ from 'lodash';
+import JsPDF from 'jspdf';
 
 @Component({
     selector: 'survey-results',
@@ -56,6 +57,17 @@ export default class SurveyResults {
             // don't have a valid survey, route back to the questionnaire
             this._router.navigate(['/survey/section']);
         }
+    }
+
+    clicked() {
+        let elementToPrint = document.getElementById("printable");
+        let pdf = new JsPDF('p', 'pt', 'a4');
+        let options = {
+            pagesplit: true
+        }
+        pdf.addHTML(elementToPrint, options, () => {
+            pdf.save("test.pdf");
+        });
     }
 
     scoreSurvey() {
